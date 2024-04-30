@@ -1,12 +1,29 @@
 package conta;
 
 import java.util.Scanner;
+import conta.model.Conta;
 import conta.util.Cores;
+
 
 public class Menu {
 
 	public static void main(String[] args) {
 		// Criação do Menu da conta
+		
+		
+		//testando Classe Conta
+		
+		//aqui eu criei um objeto c1 , que é instaciado tipo o Scanner , e ele é da Classe conta , que fará o vinculo , e vai chamar os metodos que eu criei 
+		//no pacote conta.model dentro de Conta. 
+		//passei os paramêtros dentro , e cada metodo fará sua função 
+		
+		Conta c1 = new Conta (1,123, 1, "Sara", 1000.0f);
+		
+		c1.visualizar();
+		c1.sacar(12000.0f);
+		c1.visualizar();
+		c1.depositar(5000.0f);
+		c1.visualizar();
 
 		
 		Scanner leia = new Scanner(System.in);
@@ -45,7 +62,7 @@ public class Menu {
 				System.out.println(Cores.TEXT_WHITE_BOLD+"\nBanco do Brazil com Z - O seu futuro começa aqui!");
 				sobre();
 				leia.close();
-				System.exit(0);
+				System.exit(0);//força o programa a fechar aqui
 				
 			}
 			

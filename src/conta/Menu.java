@@ -1,7 +1,11 @@
 package conta;
 
 import java.util.Scanner;
+
 import conta.model.Conta;
+import conta.model.ContaCorrente;
+import conta.model.ContaPoupanca;
+
 import conta.util.Cores;
 
 
@@ -16,14 +20,36 @@ public class Menu {
 		//aqui eu criei um objeto c1 , que é instaciado tipo o Scanner , e ele é da Classe conta , que fará o vinculo , e vai chamar os metodos que eu criei 
 		//no pacote conta.model dentro de Conta. 
 		//passei os paramêtros dentro , e cada metodo fará sua função 
+//		
+//		Conta c1 = new Conta (1,123, 1, "Sara", 1000.0f);
+//		
+//		c1.visualizar();
+//		c1.sacar(12000.0f); // vai ser inserido lá em valor .
+//		c1.visualizar();
+//		c1.depositar(5000.0f);
+//		c1.visualizar();
 		
-		Conta c1 = new Conta (1,123, 1, "Sara", 1000.0f);
+//está comentado porque a classe conta agora é abstract e não pode ser instaciada		
+
 		
-		c1.visualizar();
-		c1.sacar(12000.0f);
-		c1.visualizar();
-		c1.depositar(5000.0f);
-		c1.visualizar();
+		//Testando a Classe Conta Correnta
+		
+		ContaCorrente cc1 = new ContaCorrente (2,123,1,"Mariana",15000.0f, 1000.0f);
+		cc1.visualizar();
+		cc1.sacar(1200.0f);
+		cc1.visualizar();
+		cc1.depositar(5000.0f);
+		cc1.visualizar();
+		
+		//Testando a classe Conta Poupanca
+		
+		ContaPoupanca cp1 = new ContaPoupanca (3,123,2,"Victor",100000.0f, 15);
+		
+		cp1.visualizar();
+		cp1.sacar(1000.0f);
+		cp1.visualizar();
+		cp1.depositar(5000.0f);
+		cp1.visualizar();
 
 		
 		Scanner leia = new Scanner(System.in);

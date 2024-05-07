@@ -80,7 +80,7 @@ public  abstract class Conta {
 	}
 	
 	
-     //metodo criado para Sacar:
+     //método criado para Sacar:
 	//O Método sacar, do tipo boolean, foi criado contendo o parâmetro float valor, 
 	//que receberá o valor a ser sacado da conta. O parâmetro valor é do tipo float porquê o Atributo saldo é do tipo float.
 	
